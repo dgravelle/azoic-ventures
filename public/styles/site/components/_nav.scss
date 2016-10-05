@@ -1,0 +1,98 @@
+// @import "../utils/breakpoints.scss";
+// @import "../variables/colors.scss";
+// @import "../variables/mixins.scss";
+// @import "../fonts/fonts.scss";
+
+.navbar-default.navbar--az {
+    background-color: $primary-0;
+    border: 2px solid $primary-0;
+    border-radius: 0;
+    box-sizing: content-box;
+    margin-bottom: 0;
+    @include box-shadow(2px);
+}
+
+.navbar-default .navbar-collapse.navbar-collapse--az {
+    border: 0;
+}
+
+ul.nav.navbar-nav.navbar-nav--az  {
+    margin-bottom: 0;
+}
+
+ul.nav.navbar-nav.navbar-nav--az  > li {
+    list-style: none;
+    font-size: 16px;
+
+    @include respond-to(medium) {
+        text-align: center;
+    }
+
+    &.active,
+    &.active:hover {
+        background-color: $primary-0;
+
+        & a {
+            background-color: $primary-0;
+            color: $white;
+        }
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        margin: auto;
+        margin-top: -2px;
+        border-bottom: solid 2px $white;
+        transform: scaleX(0);
+        transition: transform .5s ease;
+        @include respond-to(medium) {
+            border-bottom: solid 2px $white;
+        }
+    }
+
+    &:hover:after,
+    &.active:after {
+        transform: scaleX(1);
+    }
+
+    a,
+    a:hover {
+        color: $white;
+        font-family: $body-font;
+    }
+
+    & .navbar-collapse--az li.active {
+        background-color: $secondary-1-0;
+    }
+}
+
+.navbar-default.navbar--az .navbar-toggle--az {
+    border-radius: 0;
+    border: none;
+
+    &:hover,
+    &:focus {
+        background-color: $primary-4;
+    }
+
+    & .icon-bar--az {
+        background: $white;
+        margin-bottom: 2px;
+    }
+}
+
+.navbar-default.navbar--az .navbar-toggle--az {
+    border-radius: 0;
+    border: none;
+
+    &:hover,
+    &:focus {
+        background-color: $primary-4;
+    }
+
+    & .icon-bar--az {
+        background: $white;
+        margin-bottom: 2px;
+    }
+}

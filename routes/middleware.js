@@ -8,6 +8,7 @@
  * modules in your project's /lib directory.
  */
 var _ = require('lodash');
+var investments = require('./investments.js');
 
 
 /**
@@ -25,6 +26,7 @@ exports.initLocals = function (req, res, next) {
 		{ label: 'Contact', key: 'contact', href: '/contact' },
 	];
 	res.locals.user = req.user;
+	res.investments = investments;
 	next();
 };
 

@@ -13,6 +13,8 @@ html
 		link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
 
 		//- Customise the stylesheet for your site by editing /public/styles/site.sass
+		link(
+			rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css" )
 		link(href="/styles/site.css", rel="stylesheet")
 
 		//- This file provides the default styling for the KeystoneJS Content Editor
@@ -36,31 +38,31 @@ html
 	body
 
 		//- HEADER
-		#header: .container
+		header#header
 
 			//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
 			//- ... or completely change this header to suit your design.
 
-			div(role="navigation").navbar.navbar-default
-				.container-fluid
-					.navbar-header
-						button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-							span.sr-only Toggle navigation
-							span.icon-bar
-							span.icon-bar
-							span.icon-bar
-						a.navbar-brand(href='/') Test App
-					.collapse.navbar-collapse
-						ul.nav.navbar-nav.navbar-left
-							each link in navLinks
-								li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
-						ul.nav.navbar-nav.navbar-right
-							if user
-								if user.canAccessKeystone
-									li: a(href='/keystone') Open Keystone
-								li: a(href='/keystone/signout') Sign Out
-							else
-								li: a(href='/keystone/signin') Sign In
+			nav(role="navigation").navbar.navbar-default.navbar--az
+				//- .container-fluid
+				.navbar-header
+					button.navbar-toggle.navbar-toggle--az(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.navbar-brand(href='/') Azoic Ventures
+				.collapse.navbar-collapse.navbar-collapse--az
+					ul.nav.navbar-nav.navbar-nav--az.navbar-right
+						each link in navLinks
+							li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+						//- ul.nav.navbar-nav.navbar-right
+						//- 	if user
+						//- 		if user.canAccessKeystone
+						//- 			li: a(href='/keystone') Open Keystone
+						//- 		li: a(href='/keystone/signout') Sign Out
+						//- 	else
+						//- 		li: a(href='/keystone/signin') Sign In
 
 		//- BODY
 		#body
@@ -97,6 +99,9 @@ html
 		//- Customise which Bootstrap javascript files are served by including
 		//- them specifically here, instead of bootstrap-3.3.5.min.js
 		script(src='/js/bootstrap/bootstrap-3.3.5.min.js')
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.js")
+		script(src="/js/bundle.js")
 
 		//- The KeystoneJS Content Editor provides support for ks-editable data attributes,
 		//- which generate links to edit content for users who can access Keystone

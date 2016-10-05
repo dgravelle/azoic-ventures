@@ -1,0 +1,11 @@
+div.swiper-container
+    div.swiper-wrapper
+        each company in locals.investments
+            div.swiper-slide(data-hash="#{company.name}")
+                a(href="/investments/#{company.name}")
+                    img(src="/images/investments/#{company.name}.png",
+                     alt="") 
+        
+    div.swiper-pagination
+    div.swiper-button-next
+    div.swiper-button-prev

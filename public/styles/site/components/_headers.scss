@@ -1,0 +1,38 @@
+// @import "../utils/breakpoints.scss";
+// @import "../variables/colors.scss";
+// @import "../fonts/fonts.scss";
+
+.heading {
+    color: $white;
+    font-family: $heading-font;
+}
+
+.header {
+    border: 0;
+    height: 440px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.header.header--ny {
+    background-image: url('../img/ny-bg.jpeg');
+    background-size: cover;
+
+    & h1.header--ny__h1 {
+        @extend .heading;
+        font-size: 8rem;
+    }
+
+    & p.header--ny__lead {
+        @extend .heading;
+        font-size: 3rem;
+    }
+}
+
+.header.header--ny .header--ny__content-container {
+    padding: 75px;
+    background-color: rgba(0,0,0,0.33);
+    @include respond-to(medium) {
+        padding: 15px 25px;
+    }
+}

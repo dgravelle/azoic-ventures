@@ -1,0 +1,11 @@
+.main.main--home {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+
+    .container {
+        @extend .main.main--home;
+    }
+}

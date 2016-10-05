@@ -5939,3 +5939,122 @@ ul.nav.navbar-nav.navbar-nav--az > li {
   @media only screen and (max-width: 768px) {
     .header.header--ny .header--ny__content-container {
       padding: 15px 25px; } }
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Istok+Web';
+.main.main--home, .main.main--home .container {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%; }
+
+.navbar-default.navbar--az {
+  background-color: #1144aa;
+  border: 2px solid #1144aa;
+  border-radius: 0;
+  box-sizing: content-box;
+  margin-bottom: 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px 2px rgba(0, 0, 0, 0.1); }
+
+.navbar-default .navbar-collapse.navbar-collapse--az {
+  border: 0; }
+
+ul.nav.navbar-nav.navbar-nav--az {
+  margin-bottom: 0; }
+
+ul.nav.navbar-nav.navbar-nav--az > li {
+  list-style: none;
+  font-size: 16px; }
+  @media only screen and (max-width: 768px) {
+    ul.nav.navbar-nav.navbar-nav--az > li {
+      text-align: center; } }
+  ul.nav.navbar-nav.navbar-nav--az > li.active, ul.nav.navbar-nav.navbar-nav--az > li.active:hover {
+    background-color: #1144aa; }
+    ul.nav.navbar-nav.navbar-nav--az > li.active a, ul.nav.navbar-nav.navbar-nav--az > li.active:hover a {
+      background-color: #1144aa;
+      color: #fff; }
+  ul.nav.navbar-nav.navbar-nav--az > li:after {
+    content: "";
+    display: block;
+    margin: auto;
+    margin-top: -2px;
+    border-bottom: solid 2px #fff;
+    transform: scaleX(0);
+    transition: transform .5s ease; }
+    @media only screen and (max-width: 768px) {
+      ul.nav.navbar-nav.navbar-nav--az > li:after {
+        border-bottom: solid 2px #fff; } }
+  ul.nav.navbar-nav.navbar-nav--az > li:hover:after, ul.nav.navbar-nav.navbar-nav--az > li.active:after {
+    transform: scaleX(1); }
+  ul.nav.navbar-nav.navbar-nav--az > li a,
+  ul.nav.navbar-nav.navbar-nav--az > li a:hover {
+    color: #fff;
+    font-family: "Istok Web"; }
+  ul.nav.navbar-nav.navbar-nav--az > li .navbar-collapse--az li.active {
+    background-color: #ff5300; }
+
+.navbar-default.navbar--az .navbar-toggle--az {
+  border-radius: 0;
+  border: none; }
+  .navbar-default.navbar--az .navbar-toggle--az:hover, .navbar-default.navbar--az .navbar-toggle--az:focus {
+    background-color: #082867; }
+  .navbar-default.navbar--az .navbar-toggle--az .icon-bar--az {
+    background: #fff;
+    margin-bottom: 2px; }
+
+.navbar-default.navbar--az .navbar-toggle--az {
+  border-radius: 0;
+  border: none; }
+  .navbar-default.navbar--az .navbar-toggle--az:hover, .navbar-default.navbar--az .navbar-toggle--az:focus {
+    background-color: #082867; }
+  .navbar-default.navbar--az .navbar-toggle--az .icon-bar--az {
+    background: #fff;
+    margin-bottom: 2px; }
+
+.swiper-container {
+  width: 100%;
+  height: 220px;
+  margin: 20px auto; }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
+.heading, .header.header--ny h1.header--ny__h1, .header.header--ny p.header--ny__lead {
+  color: #fff;
+  font-family: "Montserrat"; }
+
+.header {
+  border: 0;
+  height: 440px;
+  overflow: hidden;
+  width: 100%; }
+
+.header.header--ny {
+  background-image: url("../img/ny-bg.jpeg");
+  background-size: cover; }
+  .header.header--ny h1.header--ny__h1 {
+    font-size: 8rem; }
+  .header.header--ny p.header--ny__lead {
+    font-size: 3rem; }
+
+.header.header--ny .header--ny__content-container {
+  padding: 75px;
+  background-color: rgba(0, 0, 0, 0.33); }
+  @media only screen and (max-width: 768px) {
+    .header.header--ny .header--ny__content-container {
+      padding: 15px 25px; } }

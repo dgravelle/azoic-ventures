@@ -1,6 +1,7 @@
 var gulp = require('gulp');
+var concat = require('gulp-concat');
 var watch = require('gulp-watch');
-var shell = require('gulp-shell')
+var shell = require('gulp-shell');
 
 var sass = require('gulp-sass');
 
@@ -24,6 +25,7 @@ gulp.task('watch:sass', function () {
 gulp.task('sass', function(){
 	gulp.src(paths.style.all)
 		.pipe(sass().on('error', sass.logError))
+		.pipe(concat('main.css'))
 		.pipe(gulp.dest(paths.style.output));
 });
 
