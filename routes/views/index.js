@@ -9,6 +9,18 @@ exports = module.exports = function (req, res) {
 	// item in the header navigation.
 	locals.section = 'home';
 
+	view.on('init', function (next) {
+
+		var q = keystone.list('Investment').model.find().where('state', 'published').sort('-publishedDate');
+
+
+		q.exec(function (err, results) {
+			console.log(results);
+			locals.investments = results;
+			next(err);
+		});
+	});
+
 	// Render the view
 	view.render('index');
 };

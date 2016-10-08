@@ -1,4 +1,4 @@
 @mixin box-shadow($depth) {
-    box-shadow: $depth $depth $depth * 2 rgba(0,0,0,0.1),
-    0 -$depth $depth rgba(0,0,0,0.1),;
+    box-shadow: $depth $depth $depth * 1.5 rgba(0,0,0,0.1),
+    -$depth 0 $depth * 1.5 rgba(0,0,0,0.1),;
 }

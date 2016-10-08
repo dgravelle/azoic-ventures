@@ -38,23 +38,7 @@ ul.nav.navbar-nav.navbar-nav--az  > li {
         }
     }
 
-    &:after {
-        content: "";
-        display: block;
-        margin: auto;
-        margin-top: -2px;
-        border-bottom: solid 2px $white;
-        transform: scaleX(0);
-        transition: transform .5s ease;
-        @include respond-to(medium) {
-            border-bottom: solid 2px $white;
-        }
-    }
 
-    &:hover:after,
-    &.active:after {
-        transform: scaleX(1);
-    }
 
     a,
     a:hover {
@@ -96,3 +80,25 @@ ul.nav.navbar-nav.navbar-nav--az  > li {
         margin-bottom: 2px;
     }
 }
+
+// underline transition
+
+.underline {
+    &:after {
+        content: "";
+        display: block;
+        margin: auto;
+        margin-top: -2px;
+        border-bottom: solid 2px $white;
+        transform: scaleX(0);
+        transition: transform .5s ease;
+        @include respond-to(medium) {
+            border-bottom: solid 2px $white;
+        }
+    }
+
+    &:hover:after,
+    &.active:after {
+        transform: scaleX(1);
+    }
+}                

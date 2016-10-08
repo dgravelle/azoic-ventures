@@ -1,7 +1,7 @@
 const keystone = require('keystone');
-const investments = require('../investments');
+// const investments = require('../investments');
 
-exports = module.exports = (req, res) => {
+exports = module.exports = function(req, res) {
     var view = new keystone.View(req, res);
     var locals = res.locals;
 

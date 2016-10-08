@@ -55,7 +55,7 @@ html
 				.collapse.navbar-collapse.navbar-collapse--az
 					ul.nav.navbar-nav.navbar-nav--az.navbar-right
 						each link in navLinks
-							li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+							li.underline(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
 						//- ul.nav.navbar-nav.navbar-right
 						//- 	if user
 						//- 		if user.canAccessKeystone
