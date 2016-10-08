@@ -9,3 +9,8 @@
         @extend .main.main--home;
     }
 }
+
+footer#footer {
+    position: absolute;
+    bottom: 0;
+}

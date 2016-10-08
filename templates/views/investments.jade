@@ -1,0 +1,15 @@
+extend ../layouts/default.jade
+
+block content
+    .container
+        
+        .header__investments
+            h1 Investments
+        
+        section.investments__gallery__wrapper    
+            .row
+                each company in locals.investments
+                    .col-sm-4
+                        .investments__img__wrapper
+                            a(href="/investments/#{company.name}")
+                                img.img-responsive(src="/images/companies/#{company.name}.png")

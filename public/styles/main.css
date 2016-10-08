@@ -5830,6 +5830,10 @@ button.close {
   padding-right: 0;
   width: 100%; }
 
+footer#footer {
+  position: absolute;
+  bottom: 0; }
+
 .navbar-default.navbar--az {
   background-color: #1144aa;
   border: 2px solid #1144aa;
@@ -5948,6 +5952,10 @@ ul.nav.navbar-nav.navbar-nav--az > li {
   padding-left: 0;
   padding-right: 0;
   width: 100%; }
+
+footer#footer {
+  position: absolute;
+  bottom: 0; }
 
 .navbar-default.navbar--az {
   background-color: #1144aa;

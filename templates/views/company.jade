@@ -1,0 +1,24 @@
+extends ../layouts/default.jade
+
+block content
+    .container
+    
+        main.main.main--investments
+        
+            section.investments__wrapper
+            
+                div.row
+                    div.col-sm-4
+                    
+                        div.investments__img__wrapper
+                            img.img-responsive(src="/images/companies/#{company.name}.png")
+
+                    div.col-sm-8
+                    
+                        div.investments__desc 
+                            h2.investments__desc= company.name
+                            p= company.description
+                            a(
+                                href="#{company.url}",
+                                target="_blank"
+                                ) #{company.url}
