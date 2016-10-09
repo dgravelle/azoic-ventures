@@ -2,7 +2,7 @@ div.swiper-container
     div.swiper-wrapper
         each company in locals.investments
             div.swiper-slide(data-hash="#{company.name}")
-                a(href="/investments/#{company.name}")
+                a(href="/investments/#{company.title}")
                     img(src="/images/companies/#{company.title}.png",
                      alt="") 
         

@@ -29,5 +29,17 @@ exports = module.exports = function(req, res) {
         });
     });
 
+    view.on('init', function (next) {
+
+        var q = keystone.list('Investment').model.find().where('state', 'published').sort('-publishedDate');
+
+
+        q.exec(function (err, results) {
+            console.log(results);
+            locals.investments = results;
+            next(err);
+        });
+    });
+
     view.render('investment');
 }

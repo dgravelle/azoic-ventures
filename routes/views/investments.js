@@ -14,7 +14,6 @@ exports = module.exports = (req, res) => {
 
 
         q.exec(function (err, results) {
-            console.log(results);
             locals.investments = results;
             next(err);
         });

@@ -4,7 +4,6 @@ block content
     .container
     
         main.main.main--investments
-            h1= locals.title
             section.investments__wrapper
                 div.row
                     div.col-sm-4
@@ -22,3 +21,5 @@ block content
                                 href="#{company.url}",
                                 target="_blank"
                                 ) #{company.url}
+
+    include ../components/slider.jade
