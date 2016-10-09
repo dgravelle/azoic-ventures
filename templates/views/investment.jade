@@ -4,20 +4,20 @@ block content
     .container
     
         main.main.main--investments
-        
+            h1= locals.title
             section.investments__wrapper
-            
                 div.row
                     div.col-sm-4
                     
                         div.investments__img__wrapper
-                            img.img-responsive(src="/images/companies/#{company.name}.png")
+                            img.img-responsive(src="/images/companies/#{company.title}.png")
 
                     div.col-sm-8
                     
                         div.investments__desc 
-                            h2.investments__desc= company.name
-                            p= company.description
+                            h2.investments__desc= company.title
+                            != company.description.extended
+                            
                             a(
                                 href="#{company.url}",
                                 target="_blank"

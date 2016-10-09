@@ -4,8 +4,8 @@
 // @import "../fonts/fonts.scss";
 
 .navbar-default.navbar--az {
-    background-color: $primary-0;
-    border: 2px solid $primary-0;
+    background-color: $primary-4;
+    border: 0;
     border-radius: 0;
     box-sizing: content-box;
     margin-bottom: 0;
@@ -15,6 +15,10 @@
 .navbar-default .navbar-collapse.navbar-collapse--az {
     border: 0;
 }
+
+// *****************************************************************************
+// Lists
+// *****************************************************************************
 
 ul.nav.navbar-nav.navbar-nav--az  {
     margin-bottom: 0;
@@ -38,8 +42,6 @@ ul.nav.navbar-nav.navbar-nav--az  > li {
         }
     }
 
-
-
     a,
     a:hover {
         color: $white;
@@ -51,6 +53,20 @@ ul.nav.navbar-nav.navbar-nav--az  > li {
     }
 }
 
+// *****************************************************************************
+// Navbar brand a.navbar-brand--az
+// *****************************************************************************
+
+.navbar-default.navbar--az a.navbar-brand--az {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+// *****************************************************************************
+// Toggle button .navbar-toggle__az
+// *****************************************************************************
+
 .navbar-default.navbar--az .navbar-toggle--az {
     border-radius: 0;
     border: none;
@@ -81,7 +97,9 @@ ul.nav.navbar-nav.navbar-nav--az  > li {
     }
 }
 
+// *****************************************************************************
 // underline transition
+// *****************************************************************************
 
 .underline {
     &:after {
@@ -101,4 +119,4 @@ ul.nav.navbar-nav.navbar-nav--az  > li {
     &.active:after {
         transform: scaleX(1);
     }
-}                
+}

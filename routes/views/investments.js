@@ -6,6 +6,7 @@ exports = module.exports = (req, res) => {
     var locals = res.locals;
 
     locals.section = 'investments';
+    locals.title = 'Investments | Azoic Ventures';
 
     view.on('init', function (next) {
 

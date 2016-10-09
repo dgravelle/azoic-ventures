@@ -4,6 +4,7 @@ exports = module.exports = function (req, res) {
 
 	var view = new keystone.View(req, res);
 	var locals = res.locals;
+	locals.title = 'Home | Azoic Ventures';
 
 	// locals.section is used to set the currently selected
 	// item in the header navigation.
@@ -15,7 +16,8 @@ exports = module.exports = function (req, res) {
 
 
 		q.exec(function (err, results) {
-			console.log(results);
+			// console.log(results);
+			console.log(locals);
 			locals.investments = results;
 			next(err);
 		});

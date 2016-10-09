@@ -9,6 +9,7 @@ exports = module.exports = function(req, res) {
     locals.filter = {
         company: req.params.company
     }
+    locals.title = `${locals.filter.company} | Azoic Ventures`;
 
 
     // locals.company = investments.find(company => {
@@ -16,9 +17,8 @@ exports = module.exports = function(req, res) {
     // })
 
     view.on('init', function (next) {
-        console.log(locals.filter.company);
         var q = keystone.list('Investment').model.findOne({
-            // state: 'published',
+            state: 'published',
             title: locals.filter.company
         }).populate('author');
 

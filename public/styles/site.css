@@ -5848,8 +5848,8 @@ footer#footer {
   margin: 0 15px 15px 0; }
 
 .navbar-default.navbar--az {
-  background-color: #1144aa;
-  border: 2px solid #1144aa;
+  background-color: #082867;
+  border: 0;
   border-radius: 0;
   box-sizing: content-box;
   margin-bottom: 0;
@@ -5878,6 +5878,11 @@ ul.nav.navbar-nav.navbar-nav--az > li {
     font-family: "Istok Web"; }
   ul.nav.navbar-nav.navbar-nav--az > li .navbar-collapse--az li.active {
     background-color: #ff5300; }
+
+.navbar-default.navbar--az a.navbar-brand--az {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start; }
 
 .navbar-default.navbar--az .navbar-toggle--az {
   border-radius: 0;
@@ -5954,7 +5959,22 @@ ul.nav.navbar-nav.navbar-nav--az > li {
 
 .header.header--ny .header--ny__content-container {
   padding: 75px;
-  background-color: rgba(0, 0, 0, 0.33); }
+  background-color: rgba(17, 68, 170, 0.3); }
   @media only screen and (max-width: 768px) {
     .header.header--ny .header--ny__content-container {
       padding: 15px 25px; } }
+
+button.primary,
+a.primary {
+  background-color: #ff7939;
+  border: 2px solid #ff7939;
+  padding: 10px 16px;
+  color: #9b3200;
+  font-weight: bold;
+  font-size: 17.6px;
+  transition: all ease 0.5s; }
+  button.primary:hover,
+  a.primary:hover {
+    background-color: #c54000;
+    border: 2px solid #c54000;
+    text-decoration: none; }
