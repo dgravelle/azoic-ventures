@@ -1,3 +1,14 @@
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+div#body {
+    flex: 1;
+}
+
 p {
     font-size: 16px;
     color: $body-font-color;
@@ -15,9 +26,35 @@ p {
     }
 }
 
-footer#footer {
-    position: absolute;
-    bottom: 0;
+
+div.footer__wrapper {
+    background-color: $primary-4;
+    height: $base-margin * 4;
+    padding: $base-margin;
+    display: flex;
+
+    &, & a {
+        color: $white;
+    }
+
+    .navbar--footer {
+        flex: 1;
+    }
+
+    & ul.navbar--footer__ul {
+        align-self: center;
+        margin-bottom: 0;
+    }
+
+    & ul.navbar--footer__ul > li {
+        display: inline;
+        margin-right: $base-margin * 2;
+
+        & a {
+            color: white;
+        }
+    }
+
 }
 
 .main--about .content__wrapper {

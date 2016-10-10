@@ -5823,6 +5823,15 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+div#body {
+  flex: 1; }
+
 p {
   font-size: 16px;
   color: #666; }
@@ -5834,9 +5843,23 @@ p {
   padding-right: 0;
   width: 100%; }
 
-footer#footer {
-  position: absolute;
-  bottom: 0; }
+div.footer__wrapper {
+  background-color: #082867;
+  height: 32px;
+  padding: 8px;
+  display: flex; }
+  div.footer__wrapper, div.footer__wrapper a {
+    color: #fff; }
+  div.footer__wrapper .navbar--footer {
+    flex: 1; }
+  div.footer__wrapper ul.navbar--footer__ul {
+    align-self: center;
+    margin-bottom: 0; }
+  div.footer__wrapper ul.navbar--footer__ul > li {
+    display: inline;
+    margin-right: 16px; }
+    div.footer__wrapper ul.navbar--footer__ul > li a {
+      color: white; }
 
 .main--about .content__wrapper {
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1), -2px 0 3px rgba(0, 0, 0, 0.1);

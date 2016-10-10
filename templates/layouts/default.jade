@@ -35,7 +35,7 @@ html
 		block head
 
 	//- HTML BODY
-	body
+	body.body
 
 		//- HEADER
 		header#header
@@ -85,10 +85,20 @@ html
 
 
 		//- FOOTER
-		.container: footer#footer
-
-			//- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
-			p Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
+		footer#footer
+			.footer__wrapper
+				nav.navbar--footer
+				
+					ul.navbar--footer__ul
+						li
+							a(href="/") Home
+						li
+							a(href="/contact") Contact
+						li
+							a(href="/terms") Terms
+			
+				//- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
+				small.footer-end Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
 
 
 		//- JAVASCRIPT
