@@ -1,8 +1,3 @@
-// @import "../utils/breakpoints.scss";
-// @import "../variables/colors.scss";
-// @import "../variables/mixins.scss";
-// @import "../fonts/fonts.scss";
-
 .navbar-default.navbar--az {
     background-color: $primary-4;
     border: 0;
@@ -10,10 +5,20 @@
     box-sizing: content-box;
     margin-bottom: 0;
     @include box-shadow(2px);
+
+    & .container {
+        background-color: $primary-4;
+    }
 }
 
 .navbar-default .navbar-collapse.navbar-collapse--az {
     border: 0;
+}
+
+@include respond-to(sm) {
+    .navbar.navbar-default.navbar--az {
+        padding-left: $base-margin * 2;
+    }
 }
 
 // *****************************************************************************
@@ -119,4 +124,12 @@ ul.nav.navbar-nav.navbar-nav--az  > li {
     &.active:after {
         transform: scaleX(1);
     }
+}
+
+// *****************************************************************************
+// hamburger icon
+// *****************************************************************************
+
+.navbar-toggle.navbar-toggle--az span.icon-bar {
+    background-color: $white;
 }

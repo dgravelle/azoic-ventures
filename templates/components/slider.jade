@@ -1,11 +1,12 @@
-div.swiper-container
-    div.swiper-wrapper
-        each company in locals.investments
-            div.swiper-slide(data-hash="#{company.name}")
-                a(href="/investments/#{company.title}")
-                    img(src="/images/companies/#{company.title}.png",
-                     alt="") 
-        
-    div.swiper-pagination
-    div.swiper-button-next
-    div.swiper-button-prev
+.container
+    .swiper-container
+        .swiper-wrapper
+            each company in locals.investments
+                .swiper-slide(data-hash="#{company.name}")
+                    a(href="/investments/#{company.title}")
+                        img(src="/images/companies/#{company.title}.png",
+                         alt="") 
+            
+        .swiper-pagination
+        .swiper-button-next
+        .swiper-button-prev

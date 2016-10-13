@@ -7,29 +7,61 @@ body {
 
 div#body {
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 p {
-    font-size: 16px;
+    font-size: $font-size-base;
     color: $body-font-color;
 }
 
-.main.main--home {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
-
+@include respond-to(md) {
     .container {
-        @extend .main.main--home;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
     }
+
+    .main .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@include respond-to(sm) {
+    .main .container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .main.main--home > .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
+
+.about--content .content__wrapper {
+    @include box-shadow(2px)
+    border: 1px solid $light-grey;
+    padding: 25px;
+    margin-top: $base-margin * 4;
+    margin-bottom: $base-margin * 2;
+}
+
+.about--content .img__wrapper {
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+.investments__wrapper {
+    margin-top: $base-margin * 5;
 }
 
 
 div.footer__wrapper {
     background-color: $primary-4;
-    height: $base-margin * 4;
     padding: $base-margin;
     display: flex;
 
@@ -54,16 +86,4 @@ div.footer__wrapper {
             color: white;
         }
     }
-
-}
-
-.main--about .content__wrapper {
-    @include box-shadow(2px)
-    border: 1px solid $light-grey;
-    padding: 25px;
-}
-
-.main--about .img__wrapper {
-    float: left;
-    margin: 0 15px 15px 0;
 }

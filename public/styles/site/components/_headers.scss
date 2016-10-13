@@ -7,32 +7,59 @@
     font-family: $heading-font;
 }
 
-.header {
+.header--main {
     border: 0;
     height: 440px;
     overflow: hidden;
     width: 100%;
 }
 
-.header.header--ny {
+@include respond-to(xs) {
+    .header--main {
+        height: 350px;
+    }
+}
+
+.header--main.header--ny {
     background-image: url('/images/ny-bg.jpeg');
     background-size: cover;
+}
+
+.header--main.header--ny .header--ny__content-container {
+    padding: 75px;
+    background-color: rgba(17, 68, 170, 0.3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     & h1.header--ny__h1 {
         @extend .heading;
-        font-size: 8rem;
+        font-size: $font-size-base * 4;
     }
 
     & p.header--ny__lead {
         @extend .heading;
-        font-size: 3rem;
+        font-size: $font-size-base;
     }
 }
 
-.header.header--ny .header--ny__content-container {
-    padding: 75px;
-    background-color: rgba(17, 68, 170, 0.3);
-    @include respond-to(medium) {
+
+@include respond-to(md) {
+    .header--main.header--ny .header--ny__content-container {
         padding: 15px 25px;
+    }
+}
+
+@include respond-to(sm) {
+    .header--main.header--ny .header--ny__content-container {
+        padding: 15% 5px 15px 5px;
+
+        & h1.header--ny__h1 {
+            font-size: $font-size-base * 3;
+        }
+        & p.header--ny__lead {
+            font-size: $font-size-base;
+        }
     }
 }

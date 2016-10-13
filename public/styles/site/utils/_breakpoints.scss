@@ -1,20 +1,26 @@
-$small: 420px;
-$medium: 768px;
-$large: 1028px;
+$xs: 420px;
+$sm: 768px;
+$md: 1028px;
+$lg: 1440px;
 
 @mixin respond-to($media) {
-    @if $media == small {
-        @media only screen and (max-width: $small) {
+    @if $media == xs {
+        @media only screen and (max-width: $xs) {
             @content;
         }
     }
-    @else if $media == medium {
-        @media only screen and (max-width: $medium) {
+    @else if $media == sm {
+        @media only screen and (max-width: $sm) {
             @content;
         }
     }
-    @else if $media == large {
-        @media only screen and (max-width: $large) {
+    @else if $media == md {
+        @media only screen and (max-width: $md) {
+            @content;
+        }
+    }
+    @else if $media == lg {
+        @media only screen and (max-width: $lg) {
             @content;
         }
     }

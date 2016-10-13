@@ -1,15 +1,17 @@
 extend ../layouts/default.jade
 
 block content
-    .container
+    main.main.main--investments
+
+        .header.header--investments
+            .container
+                h1.header__h1 Investments
         
-        .header__investments
-            h1 Investments
-        
-        section.investments__gallery__wrapper    
-            .row
-                each company in locals.investments
-                    .col-sm-4
-                        .investments__img__wrapper
-                            a(href="/investments/#{company.title}")
-                                img.img-responsive(src="#{company.image.url}")
+        section.investments__wrapper
+            .container
+                .row
+                    each company in locals.investments
+                        .col-sm-4
+                            .investments__img__wrapper
+                                a(href="/investments/#{company.title}")
+                                    img.img-responsive(src="#{company.image.url}")
