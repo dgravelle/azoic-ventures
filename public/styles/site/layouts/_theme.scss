@@ -3,6 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background: $white;
 }
 
 div#body {
@@ -43,9 +44,8 @@ p {
 }
 
 .about--content .content__wrapper {
-    @include box-shadow(2px)
-    border: 1px solid $light-grey;
-    padding: 25px;
+    background: transparent;
+    padding: 0 25px;
     margin-top: $base-margin * 4;
     margin-bottom: $base-margin * 2;
 }

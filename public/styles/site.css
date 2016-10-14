@@ -5827,7 +5827,8 @@ html,
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background: #fff; }
 
 div#body {
   flex: 1;
@@ -5856,9 +5857,8 @@ p {
     padding-right: 0; } }
 
 .about--content .content__wrapper {
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1), -2px 0 3px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ccc;
-  padding: 25px;
+  background: transparent;
+  padding: 0 25px;
   margin-top: 32px;
   margin-bottom: 16px; }
 
@@ -5887,13 +5887,19 @@ div.footer__wrapper {
       color: white; }
 
 .header {
-  background-color: #5679bf;
+  background-color: transparent;
   padding: 15px 0;
-  width: 100%; }
+  width: 100%;
+  border-bottom: 1px solid #ccc; }
 
 .header h1.header__h1 {
   margin: 0;
-  color: #fff; }
+  color: #444; }
+
+main.main.main--home > .container {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%; }
 
 .navbar-default.navbar--az {
   background-color: #082867;
@@ -6005,8 +6011,9 @@ ul.nav.navbar-nav.navbar-nav--az > li {
     height: 350px; } }
 
 .header--main.header--ny {
-  background-image: url("/images/ny-bg.jpeg");
-  background-size: cover; }
+  background-image: url("/images/ny.jpeg");
+  background-size: cover;
+  background-position: center; }
 
 .header--main.header--ny .header--ny__content-container {
   padding: 75px;
@@ -6018,7 +6025,7 @@ ul.nav.navbar-nav.navbar-nav--az > li {
   .header--main.header--ny .header--ny__content-container h1.header--ny__h1 {
     font-size: 64px; }
   .header--main.header--ny .header--ny__content-container p.header--ny__lead {
-    font-size: 16px; }
+    font-size: 24px; }
 
 @media only screen and (max-width: 1028px) {
   .header--main.header--ny .header--ny__content-container {

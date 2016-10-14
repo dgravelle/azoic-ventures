@@ -21,8 +21,9 @@
 }
 
 .header--main.header--ny {
-    background-image: url('/images/ny-bg.jpeg');
+    background-image: url('/images/ny.jpeg');
     background-size: cover;
+    background-position: center;
 }
 
 .header--main.header--ny .header--ny__content-container {
@@ -40,7 +41,7 @@
 
     & p.header--ny__lead {
         @extend .heading;
-        font-size: $font-size-base;
+        font-size: $font-size-base * 1.5;
     }
 }
 
