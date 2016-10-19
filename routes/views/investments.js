@@ -10,7 +10,7 @@ exports = module.exports = (req, res) => {
 
     view.on('init', function (next) {
 
-        var q = keystone.list('Investment').model.find().where('state', 'published').sort('-publishedDate');
+        var q = keystone.list('Investment').model.find().where('state', 'published').sort('order');
 
 
         q.exec(function (err, results) {

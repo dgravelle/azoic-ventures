@@ -30,17 +30,13 @@ Investment.add({
         }
     },
     image: { type: Types.CloudinaryImage },
+    order: {
+        type: Types.Number
+    },
     description: {
-        brief: {
-            type: Types.Html,
-            wysiwyg: true,
-            height: 150
-        },
-        extended: {
-            type: Types.Html,
-            wysiwyg: true,
-            height: 400
-        }
+        type: Types.Html,
+        wysiwyg: true,
+        height: 200
     }
 });
 
