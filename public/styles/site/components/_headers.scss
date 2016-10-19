@@ -34,14 +34,15 @@
     flex-direction: column;
     align-items: center;
 
-    & h1.header--ny__h1 {
+    h1.header--ny__h1 {
         @extend .heading;
         font-size: $font-size-base * 4;
     }
 
-    & p.header--ny__lead {
+    p.header--ny__lead {
         @extend .heading;
         font-size: $font-size-base * 1.5;
+        font-family: $body-font;
     }
 }
 

@@ -5,8 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import 'https://fonts.googleapis.com/css?family=Montserrat';
-@import 'https://fonts.googleapis.com/css?family=Istok+Web';
+@import 'https://fonts.googleapis.com/css?family=Playfair+Display';
+@import 'https://fonts.googleapis.com/css?family=Fauna+One';
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5835,7 +5835,11 @@ div#body {
   display: flex;
   flex-direction: column; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif; }
+
 p {
+  font-family: "Fauna One", serif;
   font-size: 16px;
   color: #666; }
 
@@ -5894,7 +5898,8 @@ div.footer__wrapper {
 
 .header h1.header__h1 {
   margin: 0;
-  color: #444; }
+  color: #444;
+  font-family: "Playfair Display", serif; }
 
 main.main.main--home > .container {
   padding-left: 0;
@@ -5932,7 +5937,7 @@ ul.nav.navbar-nav.navbar-nav--az > li {
   ul.nav.navbar-nav.navbar-nav--az > li a,
   ul.nav.navbar-nav.navbar-nav--az > li a:hover {
     color: #fff;
-    font-family: "Istok Web"; }
+    font-family: "Fauna One", serif; }
   ul.nav.navbar-nav.navbar-nav--az > li .navbar-collapse--az li.active {
     background-color: #ff5300; }
 
@@ -5998,7 +6003,7 @@ ul.nav.navbar-nav.navbar-nav--az > li {
 
 .heading, .header--main.header--ny .header--ny__content-container h1.header--ny__h1, .header--main.header--ny .header--ny__content-container p.header--ny__lead {
   color: #fff;
-  font-family: "Montserrat"; }
+  font-family: "Playfair Display", serif; }
 
 .header--main {
   border: 0;
@@ -6024,7 +6029,8 @@ ul.nav.navbar-nav.navbar-nav--az > li {
   .header--main.header--ny .header--ny__content-container h1.header--ny__h1 {
     font-size: 64px; }
   .header--main.header--ny .header--ny__content-container p.header--ny__lead {
-    font-size: 24px; }
+    font-size: 24px;
+    font-family: "Fauna One", serif; }
 
 @media only screen and (max-width: 1028px) {
   .header--main.header--ny .header--ny__content-container {
