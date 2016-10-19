@@ -10,8 +10,10 @@ block content
         section.investments__wrapper
             .container
                 .row
-                    each company in locals.investments
+                    each company, i in locals.investments
                         .col-sm-4
                             .investments__img__wrapper
                                 a(href="/investments/#{company.title}")
                                     img.img-responsive(src="#{company.image.url}")
+                        if i !== 0 && (i + 1) % 3 == 0
+                            .clearfix 

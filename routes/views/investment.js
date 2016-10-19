@@ -11,11 +11,6 @@ exports = module.exports = function(req, res) {
     }
     locals.title = `${locals.filter.company} | Azoic Ventures`;
 
-
-    // locals.company = investments.find(company => {
-    //     return company.name === req.params.company
-    // })
-
     view.on('init', function (next) {
         var q = keystone.list('Investment').model.findOne({
             state: 'published',

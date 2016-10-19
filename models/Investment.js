@@ -31,7 +31,8 @@ Investment.add({
     },
     image: { type: Types.CloudinaryImage },
     order: {
-        type: Types.Number
+        type: Types.Number,
+        default: 9999
     },
     description: {
         type: Types.Html,
