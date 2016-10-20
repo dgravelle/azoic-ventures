@@ -5,7 +5,7 @@
                 each company in locals.investments
                     .swiper-slide(data-hash="#{company.name}")
                         a(href="/investments/#{company.title}")
-                            img(src="/images/companies/#{company.title}.png",
+                            img(src="#{company.image.url}",
                              alt="") 
                 
             .swiper-pagination
