@@ -29,11 +29,14 @@ Investment.add({
             state: 'published'
         }
     },
-    image: { type: Types.CloudinaryImage },
+    url: {
+        type: String
+    },
     order: {
         type: Types.Number,
         default: 9999
     },
+    image: { type: Types.CloudinaryImage },
     description: {
         type: Types.Html,
         wysiwyg: true,

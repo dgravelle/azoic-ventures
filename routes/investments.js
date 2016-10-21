@@ -17,9 +17,6 @@ var investments = [
         description: "A digital marketing technology company and creator of a math-driven Marketing Operating System, TerminalOne™, which brings together digital media and data into a powerful and flexible solution that simplifies planning, execution, optimization and analysis of both direct response and branding campaigns. Since inventing the Demand-Side-Platform (DSP) in 2007, MediaMath has delivered results for customers that include every major international ad agency and holding company. MediaMath is a privately held company headquartered in New York with offices in London, San Francisco, Los Angeles, Boston and Chicago.",
         url: "http://www.mediamath.com/"
     }
-    // {
-    //     name: ""
-    // }
 ]
 
 module.exports = investments;
