@@ -47,10 +47,10 @@ Enquiry.schema.methods.sendNotificationEmail = function (callback) {
 		}).send({
 			to: admins,
 			from: {
-				name: 'Test App',
-				email: 'contact@test-app.com',
+				name: 'Azoic Ventures',
+				email: 'contact@dgravelle.com',
 			},
-			subject: 'New Enquiry for Test App',
+			subject: 'New Subject',
 			enquiry: enquiry,
 		}, callback);
 	});

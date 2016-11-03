@@ -18,11 +18,11 @@ var paths = {
 };
 
 
-gulp.task('watch:sass', function () {
+gulp.task('watch:sass', function() {
 	gulp.watch(paths.style.all, ['sass']);
 });
 
-gulp.task('sass', function(){
+gulp.task('sass', function() {
 	gulp.src(paths.style.all)
 		.pipe(sass().on('error', sass.logError))
 		.pipe(concat('main.css'))
