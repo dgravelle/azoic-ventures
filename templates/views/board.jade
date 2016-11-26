@@ -1,0 +1,27 @@
+extends ../layouts/default.jade
+
+block content
+    
+    main.main.main--board
+        .container
+            section.board__wrapper
+                div.row
+                    div.col-sm-4
+                    
+                        div.board__img__wrapper
+                            img.img-responsive.center-block(src="#{company.image.url}")
+
+                    div.col-sm-8
+                    
+                        div.board__desc 
+                            h2.board__desc= company.title
+                            != company.description
+                            
+                            a(
+                                href="#{company.url}",
+                                target="_blank"
+                                ) #{company.url}
+            hr
+    
+    
+    include ../components/slider.jade

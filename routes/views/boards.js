@@ -5,19 +5,19 @@ exports = module.exports = (req, res) => {
     var view = new keystone.View(req, res);
     var locals = res.locals;
 
-    locals.section = 'investments';
-    locals.title = 'Investments | Azoic Ventures';
+    locals.section = 'boards';
+    locals.title = 'Boards | Azoic Ventures';
 
     view.on('init', function (next) {
 
-        var q = keystone.list('Investment').model.find().where('state', 'published').sort('order');
+        var q = keystone.list('Board').model.find().where('state', 'published').sort('order');
 
 
         q.exec(function (err, results) {
-            locals.investments = results;
+            locals.boards = results;
             next(err);
         });
     });
 
-    view.render('investments');
+    view.render('boards');
 }

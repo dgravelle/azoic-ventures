@@ -1,0 +1,19 @@
+extend ../layouts/default.jade
+
+block content
+    main.main.main--boards
+
+        .container
+            .header.header--boards
+                    h1.header__h1 Boards
+        
+        section.boards__wrapper
+            .container
+                .row
+                    each company, i in locals.boards
+                        .col-sm-4
+                            .boards__img__wrapper
+                                a(href="/boards/#{company.title}")
+                                    img.img-responsive(src="#{company.image.url}")
+                        if i !== 0 && (i + 1) % 3 == 0
+                            .clearfix 
