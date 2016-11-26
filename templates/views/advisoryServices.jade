@@ -1,0 +1,35 @@
+extend ../layouts/default.jade
+
+block content
+    main.main.main--advisories
+
+        .container
+            .header.header--advisories
+                    h1.header__h1 Advisory Services
+        
+        section.advisories__wrapper
+            .container.copy-lead
+                .row
+                    .col-sm-9
+                        p Azoic Ventures provides advisory services based on the founder's 33 years of experience spanning the continuum from large multinational companies like Procter & Gamble to entrepreneurial start-ups like Rosetta, which grew into a top 10 US digital agency to new start-ups..
+
+            .container.copy-lead
+                .row
+                    .col-sm-9
+                        p Advisory services include:   
+                            ul     
+                                li - Capital Raising and Refinancing    
+                                li - Mergers &amp; Acquisitions
+                                li - Operational Improvement               
+                                li - Strategic Positioning
+                                li - SaaS Revenue Models                   
+                                li - Due Diligence 
+            .container
+                .row
+                    each company, i in locals.advisories
+                        .col-sm-4
+                            .boards__img__wrapper
+                                a(href="/boards/#{company.slug}")
+                                    img.img-responsive(src="#{company.image.url}")
+                        if i !== 0 && (i + 1) % 3 == 0
+                            .clearfix 

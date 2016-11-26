@@ -1,0 +1,27 @@
+extends ../layouts/default.jade
+
+block content
+    
+    main.main.main--advisory
+        .container
+            section.advisory__wrapper
+                div.row
+                    div.col-sm-4
+                    
+                        div.advisory__img__wrapper
+                            img.img-responsive.center-block(src="#{company.image.url}")
+
+                    div.col-sm-8
+                    
+                        div.advisory__desc 
+                            h2.advisory__desc= company.title
+                            != company.description
+                            
+                            a(
+                                href="#{company.url}",
+                                target="_blank"
+                                ) #{company.url}
+            hr
+    
+    
+    include ../components/slider.jade
