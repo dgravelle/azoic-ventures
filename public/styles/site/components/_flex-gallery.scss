@@ -1,0 +1,22 @@
+.flex-row {
+    @include flex(row);
+    flex-wrap: wrap;
+    align-items: center;
+
+    .flex-item {
+        flex: 1 1 250px;
+        margin: 8px 24px;
+
+    }
+}
+
+.gallery__img__wrapper {
+    align-items: center;
+    display: flex;
+    height: 120px;
+    justify-content: center;
+
+    .gallery__img {
+        max-height: 120px;
+    }
+}

@@ -8,12 +8,4 @@ block content
                     h1.header__h1 Boards
                     p In addition to providing advisory services, Mr. Holstein also sits on the Board of Directors of industry leading companies including:
                         
-            .container
-                .row
-                    each company, i in locals.boards
-                        .col-sm-4
-                            .boards__img__wrapper
-                                a(href="/boards/#{company.slug}")
-                                    img.img-responsive(src="#{company.image.url}")
-                        if i !== 0 && (i + 1) % 3 == 0
-                            .clearfix 
+            include ../components/flex-gallery.jade

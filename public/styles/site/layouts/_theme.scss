@@ -25,7 +25,6 @@ p {
 li {
     @extend p;
     font-size: $font-size-base - 2;
-    margin-bottom: 4px;
 }
 
 @include respond-to(md) {

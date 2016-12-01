@@ -14,7 +14,7 @@ exports = module.exports = (req, res) => {
 
 
         q.exec(function (err, results) {
-            locals.boards = results;
+            locals.investments = results;
             next(err);
         });
     });

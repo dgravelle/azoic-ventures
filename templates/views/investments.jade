@@ -7,15 +7,4 @@ block content
             .header.header--investments
                     h1.header__h1 Investments
         
-        section.investments__wrapper
-            .container
-                .row
-                    each company, i in locals.investments
-                        .col-sm-4.col-xs-6
-                            .investments__img__wrapper
-                                a(href="/investments/#{company.title}")
-                                    img.img-responsive(src="#{company.image.url}")
-                        if i !== 0 && (i + 1) % 2 == 0
-                            .clearfix.visible-xs 
-                        if i !== 0 && (i + 1) % 3 == 0
-                            .clearfix.hidden-xs 
+        include ../components/flex-gallery.jade

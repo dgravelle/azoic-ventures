@@ -2,10 +2,12 @@
 @import "variables/mixins";
 @import "utils/breakpoints";
 @import "fonts/fonts";
+@import "layouts/flex";
 @import "layouts/theme";
 @import "layouts/subheader";
 @import "layouts/custom";
 @import "components/nav";
-@import "components/slider";
-@import "components/headers";
 @import "components/buttons";
+@import "components/flex-gallery";
+@import "components/headers";
+@import "components/slider";
