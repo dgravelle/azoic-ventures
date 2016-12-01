@@ -214,7 +214,7 @@ th {
     page-break-inside: avoid; }
   img {
     max-width: 100% !important; }
-  p,
+  p, li,
   h2,
   h3 {
     orphans: 3;
@@ -1213,7 +1213,7 @@ h5, .h5 {
 h6, .h6 {
   font-size: 12px; }
 
-p {
+p, li {
   margin: 0 0 10px; }
 
 .lead {
@@ -1408,7 +1408,7 @@ blockquote {
   margin: 0 0 20px;
   font-size: 17.5px;
   border-left: 5px solid #eeeeee; }
-  blockquote p:last-child,
+  blockquote p:last-child, blockquote li:last-child,
   blockquote ul:last-child,
   blockquote ol:last-child {
     margin-bottom: 0; }
@@ -4305,7 +4305,7 @@ a.badge:hover, a.badge:focus {
   .jumbotron h1,
   .jumbotron .h1 {
     color: inherit; }
-  .jumbotron p {
+  .jumbotron p, .jumbotron li {
     margin-bottom: 15px;
     font-size: 21px;
     font-weight: 200; }
@@ -4365,10 +4365,10 @@ a.thumbnail.active {
     color: inherit; }
   .alert .alert-link {
     font-weight: bold; }
-  .alert > p,
+  .alert > p, .alert > li,
   .alert > ul {
     margin-bottom: 0; }
-  .alert > p + p {
+  .alert > p + p, .alert > li + p, .alert > p + li, .alert > li + li {
     margin-top: 5px; }
 
 .alert-dismissable,
@@ -5838,10 +5838,14 @@ div#body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif; }
 
-p {
+p, li {
   font-family: "Fauna One", serif;
   font-size: 16px;
   color: #666; }
+
+li {
+  font-size: 14px;
+  margin-bottom: 4px; }
 
 @media only screen and (max-width: 1028px) {
   .container {
@@ -5863,15 +5867,11 @@ p {
 .about--content .content__wrapper {
   background: transparent;
   padding: 0 25px;
-  margin-top: 32px;
   margin-bottom: 16px; }
 
 .about--content .img__wrapper {
   float: left;
   margin: 0 15px 15px 0; }
-
-.investments__wrapper {
-  margin-top: 40px; }
 
 div.footer__wrapper {
   background-color: #082867;
@@ -5892,12 +5892,13 @@ div.footer__wrapper {
 
 .header {
   background-color: transparent;
+  margin-bottom: 24px;
   padding: 15px 0;
   width: 100%;
   border-bottom: 1px solid #ccc; }
 
 .header h1.header__h1 {
-  margin: 0;
+  margin: 0 0 6px 0;
   color: #444;
   font-family: "Playfair Display", serif; }
 
@@ -6001,7 +6002,7 @@ ul.nav.navbar-nav.navbar-nav--az > li {
   -webkit-align-items: center;
   align-items: center; }
 
-.heading, .header--main.header--ny .header--ny__content-container h1.header--ny__h1, .header--main.header--ny .header--ny__content-container p.header--ny__lead {
+.heading, .header--main.header--ny .header--ny__content-container h1.header--ny__h1, .header--main.header--ny .header--ny__content-container p.header--ny__lead, .header--main.header--ny .header--ny__content-container li.header--ny__lead {
   color: #fff;
   font-family: "Playfair Display", serif; }
 
@@ -6028,7 +6029,7 @@ ul.nav.navbar-nav.navbar-nav--az > li {
   align-items: center; }
   .header--main.header--ny .header--ny__content-container h1.header--ny__h1 {
     font-size: 64px; }
-  .header--main.header--ny .header--ny__content-container p.header--ny__lead {
+  .header--main.header--ny .header--ny__content-container p.header--ny__lead, .header--main.header--ny .header--ny__content-container li.header--ny__lead {
     font-size: 24px;
     font-family: "Fauna One", serif; }
 
@@ -6041,7 +6042,7 @@ ul.nav.navbar-nav.navbar-nav--az > li {
     padding: 15% 5px 15px 5px; }
     .header--main.header--ny .header--ny__content-container h1.header--ny__h1 {
       font-size: 48px; }
-    .header--main.header--ny .header--ny__content-container p.header--ny__lead {
+    .header--main.header--ny .header--ny__content-container p.header--ny__lead, .header--main.header--ny .header--ny__content-container li.header--ny__lead {
       font-size: 16px; } }
 
 button.primary,

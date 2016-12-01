@@ -21,6 +21,7 @@ $(document).ready(function() {
         },
         paginationClickable: true,
         spaceBetween: 30,
-        freeMode: true
+        freeMode: true,
+        autoplay: 2500
     });
 });
