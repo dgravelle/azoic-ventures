@@ -27,6 +27,14 @@ li {
     font-size: $font-size-base - 2;
 }
 
+.main {
+    margin-top: 24px;
+
+    &.main--home {
+        margin-top: 0;
+    }
+}
+
 @include respond-to(md) {
     .container {
         padding-left: 0;
@@ -41,11 +49,6 @@ li {
 }
 
 @include respond-to(sm) {
-    .main .container {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
     .main.main--home > .container {
         padding-left: 0;
         padding-right: 0;
@@ -55,7 +58,6 @@ li {
 
 .about--content .content__wrapper {
     background: transparent;
-    padding: 0 25px;
     margin-bottom: $base-margin * 2;
 }
 

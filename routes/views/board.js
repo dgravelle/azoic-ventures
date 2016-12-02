@@ -13,7 +13,7 @@ exports = module.exports = function(req, res) {
     view.on('init', function (next) {
         var q = keystone.list('Board').model.findOne({
             state: 'published',
-            slug: locals.filter.company
+            title: locals.filter.company
         }).populate('author');
 
         q.exec(function (err, result) {

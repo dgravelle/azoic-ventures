@@ -5846,6 +5846,11 @@ p, li {
 li {
   font-size: 14px; }
 
+.main {
+  margin-top: 24px; }
+  .main.main--home {
+    margin-top: 0; }
+
 @media only screen and (max-width: 1028px) {
   .container {
     padding-left: 0;
@@ -5856,16 +5861,12 @@ li {
     padding-right: 15px; } }
 
 @media only screen and (max-width: 768px) {
-  .main .container {
-    padding-left: 5px;
-    padding-right: 5px; }
   .main.main--home > .container {
     padding-left: 0;
     padding-right: 0; } }
 
 .about--content .content__wrapper {
   background: transparent;
-  padding: 0 25px;
   margin-bottom: 16px; }
 
 .about--content .img__wrapper {
@@ -5892,12 +5893,12 @@ div.footer__wrapper {
 .header {
   background-color: transparent;
   margin-bottom: 24px;
-  padding: 15px 0;
+  padding: 0 0 15px 0;
   width: 100%;
   border-bottom: 1px solid #ccc; }
 
 .header h1.header__h1 {
-  margin: 0 0 6px 0;
+  margin: 0 0 18px 0;
   color: #444;
   font-family: "Playfair Display", serif; }
 

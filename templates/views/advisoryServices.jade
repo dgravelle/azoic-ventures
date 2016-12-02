@@ -23,11 +23,4 @@ block content
         
                     
             .container
-                .row
-                    each company, i in locals.advisories
-                        .col-sm-4
-                            .boards__img__wrapper
-                                a(href="/boards/#{company.slug}")
-                                    img.img-responsive(src="#{company.image.url}")
-                        if i !== 0 && (i + 1) % 3 == 0
-                            .clearfix 
+                include ../components/flex-gallery.jade

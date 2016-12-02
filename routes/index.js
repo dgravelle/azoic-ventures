@@ -43,7 +43,7 @@ exports = module.exports = function (app) {
 	app.get('/boards', routes.views.boards);
 	app.get('/boards/:company', routes.views.board);
 	app.get('/advisoryServices', routes.views.advisoryServices);
-	app.get('/advisoryServices/:company', routes.views.advisoryService);
+	app.get('/advisory/:company', routes.views.advisoryService);
 	app.get('/boards/:company', routes.views.board);
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:

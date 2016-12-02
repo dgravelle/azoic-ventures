@@ -4,7 +4,7 @@ section.gallery__wrapper
             each company, i in locals.investments
                 .flex-item
                     .gallery__img__wrapper
-                        a(href="/investments/#{company.title}")
+                        a(href="/#{locals.section}/#{company.title}")
                             img.center-block.gallery__img(src="#{company.image.url}")
                 if i !== 0 && (i + 1) % 2 == 0
                     .clearfix.visible-xs 
